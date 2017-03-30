@@ -17,7 +17,7 @@ $allow_direct_link = true; // Set to false to only allow downloads and not direc
 
 $disallowed_extensions = ['php'];  // must be an array.
 
-$PASSWORD = '';  // Set the password, to access the file manager... (optional)
+$PASSWORD = '123';  // Set the password, to access the file manager... (optional)
 
 if($PASSWORD) {
 
@@ -172,16 +172,16 @@ $MAX_UPLOAD_SIZE = min(asBytes(ini_get('post_max_size')), asBytes(ini_get('uploa
 <script src="dist/sweetalert.min.js"></script>
 <link rel="stylesheet" type="text/css" href="dist/sweetalert.css">
 <style>
-body {font-family: "lucida grande","Segoe UI",Arial, sans-serif; font-size: 14px;width:1024;padding:1em;margin:0;}
+body {font-family: "Roboto","Segoe UI",Arial, sans-serif; font-size: 18px;width:1024;padding:1em;margin:0;}
 th {font-weight: normal; color: #1F75CC; background-color: #F0F9FF; padding:.5em 1em .5em .2em; 
-	text-align: left;cursor:pointer;user-select: none;}
+	text-align: center;cursor:pointer;user-select: none;}
 th .indicator {margin-left: 6px }
 thead {border-top: 1px solid #82CFFA; border-bottom: 1px solid #96C4EA;border-left: 1px solid #E7F2FB;
 	border-right: 1px solid #E7F2FB; }
 #top {height:52px;}
 #mkdir {display:inline-block;float:right;padding-top:16px;}
 label { display:block; font-size:11px; color:#555;}
-#file_drop_target {width:500px; padding:12px 0; border: 4px dashed #ccc;font-size:12px;color:#ccc;
+#file_drop_target {width:500px; padding:12px 0; border: 4px dashed #ccc;font-size:14px;color:#ccc;
 	text-align: center;float:right;margin-right:20px;}
 #file_drop_target.drag_over {border: 4px dashed #96C4EA; color: #96C4EA;}
 #upload_progress {padding: 4px 0;}
@@ -190,7 +190,7 @@ label { display:block; font-size:11px; color:#555;}
 .no_write #mkdir, .no_write #file_drop_target {display: none}
 .progress_track {display:inline-block;width:200px;height:10px;border:1px solid #333;margin: 0 4px 0 10px;}
 .progress {background-color: #82CFFA;height:10px; }
-footer {font-size:11px; color:#bbbbc5; padding:4em 0 0;text-align: left;}
+footer {font-size:11px; color:#bbbbc5; padding:4em 0 0;text-align: center;}
 footer a, footer a:visited {color:#bbbbc5;}
 #breadcrumb { padding-top:34px; font-size:15px; color:#aaa;display:inline-block;float:left;}
 #folder_actions {width: 50%;float:right;}
@@ -199,8 +199,8 @@ a:hover {text-decoration: underline}
 .sort_hide{ display:none;}
 table {border-collapse: collapse;width:100%;}
 thead {max-width: 1024px}
-td { padding:.2em 1em .2em .2em; border-bottom:1px solid #def;height:30px; font-size:12px;white-space: nowrap;}
-td.first {font-size:14px;white-space: normal;}
+td { text-align:center; padding:.2em 1em .2em .2em; border-bottom:1px solid #def;height:30px; font-size:15px;white-space: nowrap;}
+td.first {    text-align: left !important;font-size:16px;white-space: normal;}
 td.empty { color:#777; font-style: italic; text-align: center;padding:3em 0;}
 .is_dir .size {color:transparent;font-size:0;}
 .is_dir .size:before {content: "--"; font-size:14px;color:#333;}
